@@ -1,0 +1,19 @@
+server:
+  port: 6789
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/northwind?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: hkemall
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate:
+        current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
+        hbm2ddl:
+          auto: update
+        show_sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
