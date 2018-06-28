@@ -15,3 +15,5 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 ```
+
+https://www.cnblogs.com/mahongbiao/p/3764782.html
